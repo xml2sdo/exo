@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  inout: 1
+  amount: 
+  amount: 
+  title: MyString
+  account_id: 1
+
+two:
+  inout: 1
+  amount: 
+  amount: 
+  title: MyString
+  account_id: 1
