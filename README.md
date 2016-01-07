@@ -1,34 +1,19 @@
 == EXO de Nicolas
 
 git clone git@github.com:xml2sdo/exo.git
+
 bundle install
+
 rake db:migrate
-rake db:seed
 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Création du 1er utilisateur
 
-Things you may want to cover:
+http://localhost:3000/users
 
-* Ruby version
+* Création des comptes
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+http://localhost:3000/accounts
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+
