@@ -8,6 +8,9 @@
 </head>
 <body>
 
+<h1>Exercice NICOLAS: mini-plate-forme</h1>
+
+<%= User.find_by(id: session[:user_id]).nom %>
 <%= yield %>
 
 </body>

@@ -1,4 +1,7 @@
 <p id="notice"><%= notice %></p>
+<ul class="accounts">
+	<%= render @accounts %>
+</ul>
 
 <p>
   <strong>Login:</strong>
@@ -24,5 +27,6 @@
   <%= @user.adresse %>
 </p>
 
+<%#= link_to 'Dashboard', dash_user_path(@user) %> |
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>
