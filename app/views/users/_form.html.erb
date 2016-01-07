@@ -11,31 +11,25 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="col-md-6 col-md-offset-3">
     <%= f.label :login %><br>
-    <%= f.text_field :login %>
-  </div>
-  <div class="field">
-    <%= f.label :password %><br>
-    <%= f.password_field :pwd %>
-  </div>
-  <div class="field">
+    <%= f.text_field :login, class: 'form-control' %>
+
+    <%= f.label :password, "Mot de passe" %><br>
+    <%= f.password_field :pwd, class: 'form-control' %>
+
     <%= f.label :nom %><br>
-    <%= f.text_field :nom %>
-  </div>
-  <div class="field">
+    <%= f.text_field :nom, class: 'form-control' %>
+
     <%= f.label :prenom %><br>
-    <%= f.text_field :prenom %>
-  </div>
-  <div class="field">
-    <%= f.label :sexe %><br>
-    <%= f.check_box :sexe %>
-  </div>
-  <div class="field">
+    <%= f.text_field :prenom, class: 'form-control' %>
+
+    <%= f.label :sexe %> ("M" ou "F")<br>
+    <%= f.text_field :sexe, class: 'form-control' %>
+
     <%= f.label :adresse %><br>
-    <%= f.text_field :adresse %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
+    <%= f.text_field :adresse, class: 'form-control' %>
+
+    <%= f.submit "Créer l'utilisateur", class: "btn btn-primary"%>
   </div>
 <% end %>
