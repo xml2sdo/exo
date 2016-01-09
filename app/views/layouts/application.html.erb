@@ -8,9 +8,16 @@
 </head>
 <body>
 
-<h1>Exercice NICOLAS: mini-plate-forme</h1>
+<h3>Exercice NICOLAS: mini-plate-forme</h3>
 
-<%= " " || User.find_by(id: session[:user_id]).nom %>
+<%= @current_user %>
+<% if ( session[:user_id] ) %>
+	<%= "(user #{session[:user_id]} : #{User.find_by(id: session[:user_id]).login})" %>
+	<%= link_to 'Déconnexion', logout_url, method: :delete, data: { confirm: 'Souhaitez-vous vous déconnecter ?' } %>
+<% else %>
+	<%= link_to "Création d'un utilisateur", new_user_path %>
+<% end %>
+
 
 <%= yield %>
 
